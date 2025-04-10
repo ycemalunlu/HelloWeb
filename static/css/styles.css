@@ -10,3 +10,11 @@ h1, h2, h3 {
     background: #ffffff;
     color: rgb(0, 0, 0);
 }
+
+.stack-icon {
+    max-width: 100%; 
+    max-height: 60px;
+    margin: auto;
+    display: block;
+
+}

@@ -1,39 +1,85 @@
 {% extends "layout.html" %}
-
+{% load static %}
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>Welcome to my "Hello Web" project!</h1>
 
-<h2>
-    This website is prepared in Django framework.<br>
-    Deployed on AWS Lightsail in a Docker container.
-</h2>
+<div class="container p-2">
+    <div class="row row-gap-2">
+        <div class="col-lg-6 align-self-center text-break" style="word-break: break-word; hyphens: auto;">
+            
+            <h2>Welcome to my "Hello Web" project!</h2>
+            <h3>
+                This website is prepared in Django framework.<br>
+                Deployed on AWS Lightsail in a Docker container.
+            </h3>
 
-<h3>Here is the plan:</h3>
+        </div>
 
-<p>
-    Since my main goal is to become confident in the deployment process.<br>
-    I will create a very simple web page.<br>
-    Will try to document the process as much as possible on the way.<br>
-    You will probably be able to see the whole progress on the GitHub repository.<br>
+        <div class="col-lg-6 align-self-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 align-self-center my-2">            
+                    <img src="{% static 'media/svg/django.svg' %}" alt="Django" class="stack-icon">
+                </div>
+                <div class="col-lg-6 align-self-center my-2">            
+                    <img src="{% static 'media/svg/docker.svg' %}" alt="Docker" class="stack-icon">    
+                </div>
+                <div class="col-lg-3 align-self-center my-2">
+                    <img src="{% static 'media/svg/aws.svg' %}" alt="AWS" class="stack-icon">    
+                </div>
+                <div class="col-lg-3 align-self-center my-2">
+                    <img src="{% static 'media/svg/bootstrap.svg' %}" alt="Bootstrap" class="stack-icon">    
+                </div>
+                <div class="col-lg-6 align-self-center my-2">
+                    <img src="{% static 'media/svg/github.svg' %}" alt="GitHub" class="stack-icon">    
+                </div>
+            </div>    
+        </div>
+        
 
-</p>
+    </div>
+</div>
 
+<div class="container p-2">
+    <div class="row row-gap-2">
+                
+        <div class="col-lg-6 text-break text-justify" style="word-break: break-word; hyphens: auto;">
+            
+            <h5>Here is the plan:</h5>
 
-Recources I used to learn Django, Docker, AWS, and CI/CD:
-<ul>
+            <p>
+                Since my main goal is to become confident in the deployment process. I will create a very simple web page. Will try to document the process as much as possible on the way. You will probably be able to see the whole progress on my GitHub repository.<br>
+            </p>
 
-    <li>Learn Django basics<br><p>CS50's Web Programming with Python and JavaScript course. (Highly recommended.)</p></li>
-    <br>
+            <p>
+                Resources I used to learn Django, Docker, AWS:
+                <ul>
+                    <li>Learn Django basics<br><a href="https://cs50.harvard.edu/web/2020/">CS50's Web Programming with Python and JavaScript.</a></li>
+                    <br>
 
-    <li>Learn Docker<br><p>Docker's guide.</p></li>
-    <br>
-     
-    <li>Learn AWS</li>
-    <br>
-    <li>Learn CI/CD</li>
+                    <li>Learn Docker<br><a href="https://docs.docker.com/get-started/">Docker Docs.</a></li>
+                    <br>
+                    
+                    <li>Learn AWS</li>
+                    <br>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
 
-
-</ul>
 {% endblock %}
+
+
+
+{% comment %} 
+
+<div>
+    <img src="{% static 'media/svg/aws.svg' %}" alt="AWS">
+</div>
+<div>
+    <img src="{% static 'media/svg/github.svg' %}" alt="GitHub">
+</div>
+<div>
+    <img src="{% static 'media/svg/bootstrap.svg' %}" alt="Bootstrap">               
+</div> {% endcomment %}
